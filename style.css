@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#imageSlider {
+    border-radius: 20px;
+    /* Add border radius to the entire slider */
+    overflow: hidden;
+    /* Ensure images don't overflow the rounded corners */
+}
+
+#imageSlider .carousel-inner img {
+    border-radius: 20px;
+    /* Optional: Add radius to images for consistency */
+}
+
+.order-btn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #a81920;
+    /* Teal color */
+    border: 3px solid #a81920;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.order-btn:hover {
+    background-color: #3A8C97;
+    box-shadow: 0px 2px 0px #255E66, 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 0px #255E66;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slide-images {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.image-animation{
+    border-radius: 20px;  
+    border: 1px solid #a81920; 
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.image-slider{
+    display: inline-block;
+    padding: 10px 0;
+    animation: 10s slide-images linear infinite;
+    
+}
+.image-slider img{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.menu-section {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #a81920;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.menu-header:hover {
+    background: #efcac9;
+}
+
+.menu-content {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #a81920;
+}
+
+.menu-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.menu-item span {
+    float: right;
+    font-weight: bold;
+    color: #a81920;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    color: #a81920;
+    transition: transform 0.3s;
+}
+
+.rotate {
+    transform: rotate(1deg);
+}
+
+.about-us p{
+    text-align: center; 
+    font-family: 'Lora', serif;
+}
+
+@keyframes slide-cart {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(300%);
+    }
+}
+
+.image-animation-about{ 
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+   
+}
+
+.image-slider-about{
+    display: inline-block;
+    padding: 10px 0;
+    animation: 10s slide-about linear infinite;
+    
+}
+.image-slider-about img{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+@keyframes slide-about {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: #a81920;
+}
+.footer-content a:hover{
+    text-decoration: none;
+    color: #000;
+}
