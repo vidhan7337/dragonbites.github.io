@@ -189,3 +189,18 @@
     text-decoration: none;
     color: #000;
 }
+.contact-info-text{
+    font-size: 45px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .contact-info-text{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1000px) {
+    .contact-info-text{
+        font-size: 25px;
+    }
+}
